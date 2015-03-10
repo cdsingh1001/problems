@@ -1,8 +1,11 @@
-/* Write a program to delete duplicates from a sorted array */
-
+/* Write a program to delete duplicates from a sorted array.
+ * For eg:- if A = {2,3,5,5,7,11,11,11,13}
+ * then after deletion, A = {2,3,5,7,11,13,0,0,0}
+ * */
 
 #include "stdio.h"
 
+/* Input Data */
 void inputData(int arr[], int *len)
 {
     int i;
@@ -16,6 +19,7 @@ void inputData(int arr[], int *len)
     printf("\n");
 }
 
+/* Print Data */
 void printData(int arr[], int len)
 {
     int i;
@@ -26,6 +30,7 @@ void printData(int arr[], int len)
     printf("\n");
 }
 
+/* Function to remove duplicates from a sorted array */
 void removeDuplicates(int arr[], int len)
 {
     int i,j;
@@ -51,6 +56,7 @@ void removeDuplicates(int arr[], int len)
     }
 }
 
+/* Driver function */
 int main()
 {
     int len;
